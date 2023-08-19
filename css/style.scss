@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    position: relative;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    .main{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.60) 100%, rgba(0, 0, 0, 0.00) 100%), url('../image/Rectangle\ 31.png');
+        border-radius: 24px;
+        width: 100%;
+        height: 90vh;
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px 30px;
+            .pages{
+                display: flex;
+                align-items: center;
+                font-weight: 600;
+                font-size: 14px;
+                color: #fff;
+                gap: 32px;
+                .flight{
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                    cursor: pointer;
+                }
+                .stays{
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                    cursor: pointer;
+                }
+            }
+            img{
+                cursor: pointer;
+            }
+            .regs{
+                display: flex;
+                align-items: center;
+                gap: 32px;
+                .login{
+                    background: transparent;
+                    border: none;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #fff;
+                    cursor: pointer;
+                }
+                .sign{
+                    padding: 10px 24px;
+                    border-radius: 8px;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+        .home{
+            text-align: center;
+            color: #fff;
+            margin-top: 80px;
+            h3{
+                font-size: 45px;
+                font-weight: 700;
+            }
+            h1{
+                font-size: 80px;
+                font-weight: 700;
+            }
+            p{
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+    .flight-card{
+        width: 90%;
+        height: 35vh;
+        // border: 1px solid red;
+        padding: 16px 32px;
+        border-radius: 20px;
+        position: absolute;
+        bottom: -100px;
+        background: #fff;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        .head{
+            display: flex;
+            margin-bottom: 30px;
+            gap: 10px;
+            .flight{
+                display: flex;
+                gap: 4px;
+            }
+            .stays{
+                display: flex;
+                gap: 4px;
+            }
+        }
+        .input{
+            display: flex;
+            justify-content: space-between;
+            .input-wrapper {
+                position: relative;
+            }
+              
+            input {
+                border: 1px solid gray;
+                border-radius: 6px;
+                position: relative;
+                width: 200px;
+                margin: 10px;
+                line-height: 6ex;
+                text-align: center;
+            }
+              
+            label {
+                position: absolute;
+                top: 0.2ex;
+                z-index: 1;
+                left: 2em;
+                background-color: white;
+                padding: 0 5px;
+            }
+        }
+        .foot{
+            display: flex;  
+            align-items: center;
+            justify-content: end;
+            margin-top: 30px;
+            gap: 20px;
+            p{
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            button{
+                padding: 8px 16px;
+                border: none;
+                border-radius: 4px;
+                background: var(--mint-green, #8DD3BB);
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.pleace{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 180px;
+    padding: 30px;  
+    .head{
+        display: flex;
+        justify-content: space-between;
+        line-height: 1.5;
+        .title{
+            h3{
+                font-size: 32px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+        button{
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 4px;
+            border: 1px solid var(--mint-green, #8DD3BB);
+            background: transparent;
+        }
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        gap: 32px;
+        .card{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            width: 390px;
+            height: 122px;
+            background: #fff;
+            border-radius: 16px;
+            background: var(--neutrals, #FFF);
+            box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
+            padding: 8px 16px;
+            line-height: 1.5;
+            cursor: pointer;
+            h5{
+                font-size: 16px;
+                font-weight: 600;
+                color: #112211;
+                opacity: 0.7;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 500;
+            }
+            img{
+                width: 90px;
+                height: 90px;
+            }
+        }
+    }
+}
