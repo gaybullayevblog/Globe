@@ -221,3 +221,31 @@
         }
     }
 }
+
+.carts{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    height: 100vh;
+    margin-top: 200px;
+    .cart{
+        position: absolute;
+        width: 604px;
+        height: 559px;
+        border-radius: 20px;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .cart-1{
+        border-radius: 20px;
+        background: url(../image/Rectangle\ 40.png), lightgray -1.02px 0px / 123.536% 100% no-repeat;
+    }
+    .cart-2{
+        border-radius: 20px;
+        background: url(../image/Rectangle\ 41.png), lightgray 0px -164.802px / 100% 140.001% no-repeat;
+    }
+}
